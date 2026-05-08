@@ -8,6 +8,7 @@ import Delete from './components/Html/Users/Delete';
 import Products from './components/Html/Warehouse/products';
 import Orders from './components/Html/Warehouse/orders';
 import Inventory from './components/Html/Warehouse/inventory';
+import Bins from './components/Html/Warehouse/bins';
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
       <Route path="/products" element={<Products />} />
       <Route path="/orders" element={<Orders />} />
       <Route path="/inventory" element={<Inventory />} />
+      <Route path="/bins" element={<Bins />} />
       <Route path="/update" element={<Update />} />
-      <Route path="/delete" element={<Delete />} />
+      <Route path="/delete" element={<Delete />} /> 
     </Routes>
   );
 }

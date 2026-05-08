@@ -19,15 +19,18 @@ function Welcome() {
   return (
     <div id="page-layout">
       <aside id="sidebar">
-        <div className="sidebar-title">Menu</div>
-        <button className="sidebar-link" onClick={() => handleNavigatePage('/Products')}>
+        <div id="sidebar-title">Menu</div>
+        <button id="sidebar-link" onClick={() => handleNavigatePage('/products')}>
           Products
         </button>
-        <button className="sidebar-link" onClick={() => handleNavigatePage('/orders')}>
+        <button id="sidebar-link" onClick={() => handleNavigatePage('/orders')}>
           Orders
         </button>
-        <button className="sidebar-link" onClick={() => handleNavigatePage('/inventory')}>
+        <button id="sidebar-link" onClick={() => handleNavigatePage('/inventory')}>
           Inventory
+        </button>
+        <button id="sidebar-link" onClick={() => handleNavigatePage('/bins')}>
+          Bins
         </button>
       </aside>
       <main id="main-content">
@@ -43,7 +46,7 @@ function Welcome() {
             <p>Order Products Online</p>
           </div>
           <p id='p2'>**************************** HAVE A SEEMLESS EXPERIENCE ***************************</p><br />
-          <div id="btn-div">
+          <div id="btn-div2">
             <button id="btn" onClick={() => navigate('/login')}>Back to Login</button>
             <button id="btn" onClick={() => navigate('/update', { state: { user } })}>Update profile</button>
             <button id="btn" onClick={() => navigate('/delete', { state: { user } })}>Delete profile</button>
